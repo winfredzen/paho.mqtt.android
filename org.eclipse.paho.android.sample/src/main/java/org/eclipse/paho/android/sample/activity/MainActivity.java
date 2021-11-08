@@ -192,6 +192,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             Connections.getInstance(this).updateConnection(connection);
             drawerFragment.updateConnection(connection);
 
+            //连接
             connection.getClient().connect(connOpts, null, callback);
             Fragment fragment  = new ConnectionFragment();
             Bundle bundle = new Bundle();
